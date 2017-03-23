@@ -1,5 +1,7 @@
 # FileInImage
 
+<img src="https://github.com/jojuniori/FileInImage/raw/master/icon.png" width="196px" style="float: left;">
+
 Use GUI combine file with image.
 
 Developed by Skim, JoJunIori.  

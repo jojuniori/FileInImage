@@ -23,6 +23,7 @@ namespace FileInImage
         {
             InitializeComponent();
         }
+
         // 实现整个窗口的拖动
         private void DragWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -43,7 +44,7 @@ namespace FileInImage
             Info window = new Info();
             window.Show();
         }
-        // 打开Info窗口
+        // 关闭窗口
         private void WindowClose_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Application.Current.Shutdown();

@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileInImage"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="关于" Height="321" Width="424" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True">
     <Window.Background>
         <ImageBrush Stretch="None" ImageSource="Image/frame_info.png"/>
