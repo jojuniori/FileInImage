@@ -4,8 +4,8 @@
 
 ### Use GUI combine file with image.
 
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]()
-[![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)][master]
+[![AUR](https://img.shields.io/aur/license/yaourt.svg)][master]
 [![Readme](https://img.shields.io/badge/readme-%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E-blue.svg)](https://github.com/jojuniori/FileInImage/blob/master/README_CN.md)
 
 You can take package format file merging into the image, like "rar" "zip" "7z".   
@@ -33,3 +33,5 @@ Output
 # License
 
 GPLv3
+
+[master]: https://github.com/jojuniori/FileInImage

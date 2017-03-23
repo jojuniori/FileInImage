@@ -4,8 +4,8 @@
 
 ### 用简单易懂的程序将文件融合进图片。
 
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]()
-[![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)][master]
+[![AUR](https://img.shields.io/aur/license/yaourt.svg)][master]
 [![Readme](https://img.shields.io/badge/readme-english-blue.svg)](https://github.com/jojuniori/FileInImage/blob/master/README.md)
 
 你可以将压缩格式的文件合并进图片里，比如rar、zip、7z。  
@@ -33,3 +33,5 @@
 # 协议
 
 GPLv3
+
+[master]: https://github.com/jojuniori/FileInImage
