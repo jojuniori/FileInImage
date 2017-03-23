@@ -7,11 +7,11 @@ Designed by JoJunIori.
 
 # Sample
 Open  
-![sample_input.png](https://github.com/jojuniori/FileInImage/blob/master/sample_open.png)  
-Drag & Drop image, file into box  
-![sample_input.png](https://github.com/jojuniori/FileInImage/blob/master/sample_input.png)  
+<img src="https://github.com/jojuniori/FileInImage/blob/master/sample_open.png" width="445px">  
+Drag & Drop image, file into box   
+<img src="https://github.com/jojuniori/FileInImage/blob/master/sample_input.png" width="445px">  
 Output  
-![sample_output.png](https://github.com/jojuniori/FileInImage/blob/master/sample_output.png)  
+<img src="https://github.com/jojuniori/FileInImage/blob/master/sample_output.png" width="445px">  
 
 
 # Dependencies
