@@ -22,14 +22,24 @@ namespace FileInImage
         {
             InitializeComponent();
         }
+        // 实现整个窗口的拖动
         private void DragWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            base.DragMove();//实现整个窗口的拖动
+            base.DragMove();
         }
-
+        // 绑定关闭按钮
         private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.Close();
+        }
+        // 超链接
+        private void OpenWebGit_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/jojuniori/FileInImage");
+        }
+        private void OpenWebMoem_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://www.moem.cc/");
         }
     }
 }

@@ -19,9 +19,9 @@
             <Run MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Text="Developed by Skim, JoJunIori."/><LineBreak/>
             <Run MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Text="Designed by JoJunIori."/><LineBreak/>
             <Run MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Text="Source Code: "/>
-            <Run Foreground="#FF0076FF" Text="Github" TextDecorations="Underline"/>
+            <Run MouseLeftButtonDown="OpenWebGit_MouseLeftButtonDown" Foreground="#FF0076FF" Text="Github" TextDecorations="Underline" Cursor="Hand"/>
             <Run MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Text=". Site:  "/>
-            <Run Foreground="#FF0076FF" Text="www.moem.cc" TextDecorations="Underline"/>
+            <Run MouseLeftButtonDown="OpenWebMoem_MouseLeftButtonDown" Foreground="#FF0076FF" Text="www.moem.cc" TextDecorations="Underline" Cursor="Hand"/>
         </TextBlock>
         <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="© 2017 Moem Software" Foreground="Gray" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" Padding="0" Margin="142,256,142,50"/>
 

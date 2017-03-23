@@ -22,31 +22,36 @@ namespace FileInImage
         public MainWindow()
         {
             InitializeComponent();
-
         }
+        // 实现整个窗口的拖动
         private void DragWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            base.DragMove();//实现整个窗口的拖动
+            base.DragMove();
         }
-
+        // 合成按钮点击效果
         private void SynthesisButton_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             SynthesisButton.Margin = new Thickness(0, 1, 0, 15);
         }
-
         private void SynthesisButton_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
         {
             SynthesisButton.Margin = new Thickness(0, 0, 0, 16);
         }
-
-        private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        // 打开Info窗口
+        private void WindowOpenInfo_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Info window = new Info();
             window.Show();
         }
-
-        private void Image_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        // 打开Info窗口
+        private void WindowClose_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            Application.Current.Shutdown();
+        }
+        // 检测主窗口关闭则关闭程序
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
             Application.Current.Shutdown();
         }
     }
