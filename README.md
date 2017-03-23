@@ -6,6 +6,9 @@
 
 ### Use GUI combine file with image.
 
+[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]()
+[![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
+
 Developed by Skim, JoJunIori.  
 
 Designed by JoJunIori.
@@ -13,8 +16,6 @@ Designed by JoJunIori.
 Dependencies with VS2017.
 
 Can run at .net >= 3.5.
-
-<br>
 
 
 # Sample
