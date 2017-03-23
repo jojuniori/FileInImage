@@ -10,12 +10,11 @@
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
 
 Developed by Skim, JoJunIori.  
-
 Designed by JoJunIori.
 
 Dependencies with VS2017.
 
-Can run at .net >= 3.5.
+This program requires .Net Framework 3.5 or later version to run.
 
 
 # Sample
