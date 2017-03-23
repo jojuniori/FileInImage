@@ -8,7 +8,7 @@
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
 [![Readme](https://img.shields.io/badge/readme-english-blue.svg)](https://github.com/jojuniori/FileInImage/blob/master/README.md)
 
-你可以将任意格式的文件合并进图片里。  
+你可以将压缩格式的文件合并进图片里，比如rar、zip、7z。  
 并且当你把合并后的图片改回原来的文件格式的时候依然可用。  
 
 运行这个程序需要 .Net Framework 3.5 以上的支持。
