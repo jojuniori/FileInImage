@@ -22,18 +22,20 @@
         <Canvas MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Height="294" Width="444" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Label Content="文件嵌入图片" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="14" FontFamily="Microsoft YaHei" HorizontalContentAlignment="Center" Margin="175,16,175,0" Foreground="Gray"/>
         </Canvas>
+        <!-- 右上角功能按钮 -->
         <Image Source="Image/Icon-info.png" Stretch="Fill" HorizontalAlignment="Right" Width="16" Height="16" Margin="0,22,58,256" MouseLeftButtonDown="WindowOpenInfo_MouseLeftButtonDown" Cursor="Hand"/>
         <Image Margin="395,22,33,256" Source="Image/Icon-close.png" Stretch="Fill" Cursor="Hand" MouseLeftButtonDown="WindowClose_MouseLeftButtonDown"/>
-
+        <!-- 一键合成按钮 -->
         <Image Height="70" Name="SynthesisButton"  Source="Image/button.png" Stretch="Fill" Width="70" Margin="0,0,0,16" Cursor="Hand" MouseLeftButtonDown="SynthesisButton_MouseLeftButtonDown" MouseLeftButtonUp="SynthesisButton_MouseLeftButtonUp"/>
+        <!-- 拖入文件区域 -->
         <Image MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Margin="42,53,282,121" Source="Image/icon_file.png" Stretch="Fill"/>
         <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="拖入文件" HorizontalAlignment="Center" Margin="42,176,282,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="120" FontSize="16" Padding="0" Foreground="#FFB2B2B2"/>
         <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="0 KB" HorizontalAlignment="Center" Margin="42,196,282,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="120" Padding="0" Foreground="#FFB2B2B2"/>
-
+        <!-- 拖入图片区域 -->
         <Image MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Margin="282,53,42,121" Source="Image/icon_image.png" Stretch="Fill"/>
         <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="拖入图片" HorizontalAlignment="Center" Margin="282,176,42,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="120" FontSize="16" Padding="0" Foreground="#FFB2B2B2"/>
         <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="0 KB" HorizontalAlignment="Center" Margin="282,196,42,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="120" Padding="0" Foreground="#FFB2B2B2"/>
-
+        <!-- 提示条 -->
         <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="提示：两边拖入对应文件后点击中间合成按钮" HorizontalAlignment="Center" Margin="33,222,33,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="378" Padding="0" Foreground="#FFB2B2B2" FontSize="16"/>
 
     </Grid>

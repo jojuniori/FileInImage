@@ -7,7 +7,8 @@
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]()
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
 
-You can take any format file merging into the image, when your synthetic image changed back to the original file format it is still available
+You can take any format file merging into the image.  
+when your synthetic image changed back to the original file format it is still available.
 
 This program requires .Net Framework 3.5 or later version to run.
 
