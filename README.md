@@ -12,3 +12,12 @@ Drag & Drop image, file into box
 ![sample_input.png](https://github.com/jojuniori/FileInImage/blob/master/sample_input.png)  
 Output  
 ![sample_output.png](https://github.com/jojuniori/FileInImage/blob/master/sample_output.png)  
+
+
+# Dependencies
+
+* VS2017
+
+# License
+
+GPLv3
