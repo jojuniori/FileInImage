@@ -2,13 +2,20 @@
 
 <img src="https://github.com/jojuniori/FileInImage/raw/master/icon.png" width="196px" align="left">
 
+<br>
+
 ### Use GUI combine file with image.
 
 Developed by Skim, JoJunIori.  
+
 Designed by JoJunIori.
 
-Dependencies: VS2017.
+Dependencies with VS2017.
+
 Can run at .net >= 3.5.
+
+<br>
+
 
 # Sample
 
