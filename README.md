@@ -6,6 +6,7 @@
 
 [![Travis](https://img.shields.io/travis/rust-lang/rust.svg)]()
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)]()
+[![Readme](https://img.shields.io/badge/readme-%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E-blue.svg)](https://github.com/jojuniori/FileInImage/blob/master/README_CN.md)
 
 You can take any format file merging into the image.  
 when your synthetic image changed back to the original file format it is still available.
