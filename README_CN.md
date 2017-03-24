@@ -4,7 +4,7 @@
 
 ### 用简单易懂的程序将文件融合进图片。
 
-[![Travis](https://img.shields.io/travis/rust-lang/rust.svg)][master]
+[![build](https://img.shields.io/badge/build-passing-brightgreen.svg)][master]
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)][master]
 [![Readme](https://img.shields.io/badge/readme-english-blue.svg)](https://github.com/jojuniori/FileInImage/blob/master/README.md)
 
