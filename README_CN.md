@@ -22,13 +22,13 @@
 # 例子
 
 打开程序  
-<img src="https://github.com/jojuniori/FileInImage/raw/master/sample_open.png" width="445px">  
+<img src="https://github.com/jojuniori/FileInImage/raw/master/sample_open_cn.png" width="445px">  
 
 将文件和图片拖进窗口内   
-<img src="https://github.com/jojuniori/FileInImage/raw/master/sample_input.png" width="445px">  
+<img src="https://github.com/jojuniori/FileInImage/raw/master/sample_input_cn.png" width="445px">  
 
 点击“一键合成”  
-<img src="https://github.com/jojuniori/FileInImage/raw/master/sample_output.png" width="445px">  
+<img src="https://github.com/jojuniori/FileInImage/raw/master/sample_output_cn.png" width="445px">  
 
 # 协议
 
