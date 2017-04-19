@@ -15,7 +15,7 @@
         <Image Margin="375,22,33,283" Source="Image/Icon-close.png" Stretch="Fill" Width="16" Height="16" Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
 
         <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="File In Image" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="#FF333333" Padding="0" FontSize="16" Width="166" Margin="0,146,0,0"/>
-        <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="version 1.0.0" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="Gray" Padding="0" Width="166" Margin="129,166,129,0" FontSize="14"/>
+        <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="version 1.0.1" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="Gray" Padding="0" Width="166" Margin="129,166,129,0" FontSize="14"/>
         <TextBlock TextAlignment="Center"  HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Margin="33,189,33,0" FontSize="14" Foreground="Gray" Width="358">
             <Run MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Text="Developed by Skim, JoJunIori."/><LineBreak/>
             <Run MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Text="Designed by JoJunIori."/><LineBreak/>

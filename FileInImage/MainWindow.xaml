@@ -28,15 +28,15 @@
         <!-- 一键合成按钮 -->
         <Image Height="70" Name="SynthesisButton"  Source="Image/button.png" Stretch="Fill" Width="70" Margin="0,0,0,16" Cursor="Hand" MouseLeftButtonDown="SynthesisButton_MouseLeftButtonDown" MouseLeftButtonUp="SynthesisButton_MouseLeftButtonUp"/>
         <!-- 拖入文件区域 -->
-        <Image MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Margin="42,53,282,121" Source="Image/icon_file.png" Stretch="Fill" AllowDrop="True" Drop="FileDrop"/>
-        <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="拖入文件" HorizontalAlignment="Center" Margin="42,176,282,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="120" FontSize="16" Padding="0" Foreground="#FFB2B2B2"/>
+        <Image Name="DropFileBG" MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Margin="42,53,282,121" Source="Image/icon_file.png" Stretch="Fill" AllowDrop="True" Drop="FileDrop"/>
+        <Label Name="DropFileTitle" MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="拖入文件" HorizontalAlignment="Center" Margin="42,176,282,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="120" FontSize="16" Padding="0" Foreground="#FFB2B2B2"/>
         <Label x:Name="fileSize" MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="0 KB" HorizontalAlignment="Center" Margin="42,196,282,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="120" Padding="0" Foreground="#FFB2B2B2"/>
         <!-- 拖入图片区域 -->
-        <Image MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Margin="282,53,42,121" Source="Image/icon_image.png" Stretch="Fill" AllowDrop="True" Drop="ImageDrop"/>
-        <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="拖入图片" HorizontalAlignment="Center" Margin="282,176,42,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="120" FontSize="16" Padding="0" Foreground="#FFB2B2B2"/>
+        <Image x:Name="target" MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Margin="282,53,42,121" Source="Image/icon_image.png" Stretch="Fill" AllowDrop="True" Drop="ImageDrop"/>
+        <Label  Name="DropImageTitle" MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="拖入图片" HorizontalAlignment="Center" Margin="282,176,42,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="120" FontSize="16" Padding="0" Foreground="#FFB2B2B2"/>
         <Label x:Name="imageSize" MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="0 KB" HorizontalAlignment="Center" Margin="282,196,42,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="120" Padding="0" Foreground="#FFB2B2B2"/>
         <!-- 提示条 -->
-        <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="提示：两边拖入对应文件后点击中间合成按钮" HorizontalAlignment="Center" Margin="33,222,33,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="378" Padding="0" Foreground="#FFB2B2B2" FontSize="16"/>
-
+        <Label Name="tip" MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="提示：两边拖入对应文件后点击中间合成按钮" HorizontalAlignment="Center" Margin="33,222,33,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="378" Padding="0" Foreground="#FFB2B2B2" FontSize="16"/>
+        <!-- <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/> -->
     </Grid>
 </Window>
