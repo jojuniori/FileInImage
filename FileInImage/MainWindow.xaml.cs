@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -8,6 +11,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Interop;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
@@ -107,6 +111,7 @@ namespace FileInImage
 
         private void ImageDrop(object sender, DragEventArgs e)
         {
+
             if (!e.Data.GetDataPresent(DataFormats.FileDrop))
             {
                 return;
@@ -120,12 +125,58 @@ namespace FileInImage
                 {
                     img = new FileInfo(files[0]);
                     imageSize.Content = fileSize2Text(img.Length);
+
+                    Bitmap bi3 = CreateBitmapThumbNail(files[0], target.RenderSize.Height, target.RenderSize.Width);
+
+                    target.Stretch = Stretch.Uniform;
+                    target.Source = ChangeBitmapToImageSource(bi3);
                 }
                 catch (Exception)
                 {
                     file = null;
                 }
             }
+        }
+
+        private Bitmap CreateBitmapThumbNail(string fromFile, double maxWidth, double maxHeight)
+        {
+            System.Drawing.Image image = System.Drawing.Image.FromFile(fromFile);
+            float scale =(float)Math.Max(maxWidth / image.Width, maxHeight / image.Height);
+            var destRect = new System.Drawing.Rectangle(0, 0, (int)(image.Width * scale), (int)(image.Height * scale));
+
+            var destImage = new Bitmap(destRect.Width, destRect.Height);
+
+            destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+
+            using (var graphics = Graphics.FromImage(destImage))
+            {
+                graphics.CompositingMode = CompositingMode.SourceCopy;
+                //graphics.CompositingQuality = CompositingQuality.HighQuality;
+                //graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                //graphics.SmoothingMode = SmoothingMode.HighQuality;
+                //graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
+
+                using (var wrapMode = new ImageAttributes())
+                {
+                    wrapMode.SetWrapMode(WrapMode.TileFlipXY);
+                    graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapMode);
+                }
+            }
+
+            return destImage;
+        }
+
+        public static ImageSource ChangeBitmapToImageSource(Bitmap bitmap)
+        {
+            IntPtr hBitmap = bitmap.GetHbitmap();
+            ImageSource wpfBitmap = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(
+                hBitmap,
+                IntPtr.Zero,
+                Int32Rect.Empty,
+                BitmapSizeOptions.FromEmptyOptions());
+
+            return wpfBitmap;
         }
 
         private FileInfo file=null;
