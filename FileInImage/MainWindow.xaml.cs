@@ -29,7 +29,7 @@ namespace FileInImage
         {
             InitializeComponent();
             // 统计启动次数
-            string strURL = "http://192.168.0.104:8000/software/FileInImage/launch";
+            string strURL = "https://www.moem.cc/software/FileInImage/launch";
             System.Net.HttpWebRequest request;
             request = (System.Net.HttpWebRequest)WebRequest.Create(strURL);
             request.Method = "POST"; // Post请求方式
@@ -220,7 +220,7 @@ namespace FileInImage
                 output.Close();
 
                 // 统计合成次数
-                string strURL = "http://192.168.0.104:8000/software/FileInImage/use";
+                string strURL = "https://www.moem.cc/software/FileInImage/use";
                 System.Net.HttpWebRequest request;
                 request = (System.Net.HttpWebRequest)WebRequest.Create(strURL);
                 request.Method = "POST"; // Post请求方式
