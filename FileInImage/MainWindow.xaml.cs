@@ -17,6 +17,7 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.Windows.Interop;
+using System.Windows.Media.Animation;
 
 namespace FileInImage
 {
@@ -28,6 +29,8 @@ namespace FileInImage
         public MainWindow()
         {
             InitializeComponent();
+            DoubleAnimation daV = new DoubleAnimation(0, 1, new Duration(TimeSpan.FromSeconds(.3)));
+            this.FILMainWindow.BeginAnimation(UIElement.OpacityProperty, daV);
             // 统计启动次数
             string strURL = "https://www.moem.cc/software/FileInImage/launch";
             System.Net.HttpWebRequest request;
