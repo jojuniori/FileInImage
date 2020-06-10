@@ -39,7 +39,7 @@ namespace FileInImage
         }
         private void OpenWebMoem_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.moem.cc/");
+            System.Diagnostics.Process.Start("https://neko0.com/");
         }
     }
 }

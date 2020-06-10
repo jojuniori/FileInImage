@@ -8,6 +8,7 @@
 *.userprefs
 
 # Build results
+publish/
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/

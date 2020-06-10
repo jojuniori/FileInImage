@@ -7,7 +7,7 @@
 [![build](https://img.shields.io/badge/build-passing-brightgreen.svg)][master]
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)][master]
 [![Readme](https://img.shields.io/badge/readme-english-blue.svg)](https://github.com/jojuniori/FileInImage/blob/master/README.md)  
-:floppy_disk: 您可以从这里进行下载: [Moem.cc](https://www.moem.cc/software/FileInImage). 
+:floppy_disk: 您可以从这里进行下载: [releases](https://github.com/jojuniori/FileInImage/releases). 
 
 您可以将压缩格式的文件合并进图片里，比如rar、zip、7z。  
 并且当你把合并后的图片改回原来的文件格式的时候依然可用。  

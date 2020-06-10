@@ -11,20 +11,20 @@
         <ImageBrush Stretch="None" ImageSource="Image/frame_info.png"/>
     </Window.Background>
     <Grid>
-        <Canvas MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Height="321" Width="424" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Top"></Canvas>
+        <Canvas MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Height="321" Width="424" Background="#00000000" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <Image Margin="375,22,33,283" Source="Image/Icon-close.png" Stretch="Fill" Width="16" Height="16" Cursor="Hand" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
 
         <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="File In Image" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="#FF333333" Padding="0" FontSize="16" Width="166" Margin="0,146,0,0"/>
-        <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="version 1.0.1" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="Gray" Padding="0" Width="166" Margin="129,166,129,0" FontSize="14"/>
+        <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="version 1.0.2" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Center" Foreground="Gray" Padding="0" Width="166" Margin="129,166,129,0" FontSize="14"/>
         <TextBlock TextAlignment="Center"  HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Margin="33,189,33,0" FontSize="14" Foreground="Gray" Width="358">
             <Run MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Text="Developed by Skim, JoJunIori."/><LineBreak/>
             <Run MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Text="Designed by JoJunIori."/><LineBreak/>
             <Run MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Text="Source Code: "/>
             <Run MouseLeftButtonDown="OpenWebGit_MouseLeftButtonDown" Foreground="#FF0076FF" Text="Github" TextDecorations="Underline" Cursor="Hand"/>
-            <Run MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Text=". Site:  "/>
-            <Run MouseLeftButtonDown="OpenWebMoem_MouseLeftButtonDown" Foreground="#FF0076FF" Text="www.moem.cc" TextDecorations="Underline" Cursor="Hand"/>
+            <Run MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Text=". Site: "/>
+            <Run MouseLeftButtonDown="OpenWebMoem_MouseLeftButtonDown" Foreground="#FF0076FF" Text="neko0.com" TextDecorations="Underline" Cursor="Hand"/>
         </TextBlock>
-        <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="© 2017 Moem Software" Foreground="Gray" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" Padding="0" Margin="142,256,142,50"/>
+        <Label MouseLeftButtonDown="DragWindow_MouseLeftButtonDown" Content="© 2013-2020 Neko0 Software" Foreground="Gray" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" Padding="0" Margin="120,255,121,51" Width="183"/>
 
     </Grid>
 </Window>

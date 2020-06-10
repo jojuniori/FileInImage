@@ -7,7 +7,7 @@
 [![build](https://img.shields.io/badge/build-passing-brightgreen.svg)][master]
 [![AUR](https://img.shields.io/aur/license/yaourt.svg)][master]
 [![Readme](https://img.shields.io/badge/readme-%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E-blue.svg)](https://github.com/jojuniori/FileInImage/blob/master/README_CN.md)  
-:floppy_disk: You can download from: [Moem.cc](https://www.moem.cc/software/FileInImage). 
+:floppy_disk: You can download from: [releases](https://github.com/jojuniori/FileInImage/releases). 
 
 You can take package format file merging into the image, like "rar" "zip" "7z".   
 when your synthetic image changed back to the original file format it is still available.

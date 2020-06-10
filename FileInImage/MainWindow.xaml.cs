@@ -26,24 +26,30 @@ namespace FileInImage
     /// </summary>
     public partial class MainWindow : Window
     {
+        // 限制文件名最大字数
+        int maxLength = 10;
         public MainWindow()
         {
             InitializeComponent();
             DoubleAnimation daV = new DoubleAnimation(0, 1, new Duration(TimeSpan.FromSeconds(.3)));
             this.FILMainWindow.BeginAnimation(UIElement.OpacityProperty, daV);
             // 统计启动次数
-            string strURL = "https://www.moem.cc/software/FileInImage/launch";
+            string strURL = "https://neko0.com/count/software.php?name=FileInImage&action=launch";
             System.Net.HttpWebRequest request;
             request = (System.Net.HttpWebRequest)WebRequest.Create(strURL);
             request.Method = "POST"; // Post请求方式
             request.ContentType = "application/x-www-form-urlencoded"; // 内容类型
-            System.Net.HttpWebResponse response;
-            // 获得响应流
-            response = (System.Net.HttpWebResponse)request.GetResponse();
-            System.IO.StreamReader myreader = new System.IO.StreamReader(response.GetResponseStream(), Encoding.UTF8);
-            // string responseText = myreader.ReadToEnd();
-            myreader.Close();
-            // MessageBox.Show(responseText);
+            try
+            {
+                // 获得响应流
+                System.Net.HttpWebResponse response;
+                response = (System.Net.HttpWebResponse)request.GetResponse();
+                System.IO.StreamReader myreader = new System.IO.StreamReader(response.GetResponseStream(), Encoding.UTF8);
+                // string responseText = myreader.ReadToEnd();
+                myreader.Close();
+                // MessageBox.Show(responseText);
+            }
+            catch (Exception){}
         }
 
         // 实现整个窗口的拖动
@@ -57,19 +63,21 @@ namespace FileInImage
         {
             Info window = new Info();
             window.Show();
-
         }
+
         // 关闭窗口
         private void WindowClose_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Application.Current.Shutdown();
         }
+
         // 检测主窗口关闭则关闭程序
         protected override void OnClosed(EventArgs e)
         {
             base.OnClosed(e);
             Application.Current.Shutdown();
         }
+
         // 文件大小转换
         private string fileSize2Text(double size)
         {
@@ -83,6 +91,7 @@ namespace FileInImage
 
             return level == 0 ? size + "B" : String.Format("{0:0.00}", size) + suffixs[level];
         }
+
         // 拖动文件事件
         private void FileDrop(object sender, DragEventArgs e)
         {
@@ -107,7 +116,8 @@ namespace FileInImage
                         // File Image
                         DropFileBG.Source = new BitmapImage(new Uri(@"\Image\icon_fileInputted.png", UriKind.Relative));
                         // File Name
-                        DropFileTitle.Content = file.Name.ToString();
+                        string str = file.Name.ToString();
+                        DropFileTitle.Content = str.Length > maxLength ? str.Substring(0, maxLength) + "..." : str;
                     }
                     else
                     {
@@ -121,6 +131,7 @@ namespace FileInImage
                 }
             }
         }
+
         // 拖动图片事件
         private void ImageDrop(object sender, DragEventArgs e)
         {
@@ -147,7 +158,8 @@ namespace FileInImage
                         target.Stretch = Stretch.Uniform;
                         target.Source = ChangeBitmapToImageSource(bi3);
                         // Image name
-                        DropImageTitle.Content = file.Name.ToString();
+                        string str = img.Name.ToString();
+                        DropImageTitle.Content = str.Length > maxLength ? str.Substring(0, maxLength) + "..." : str;
                     }
                     else
                     {
@@ -223,18 +235,22 @@ namespace FileInImage
                 output.Close();
 
                 // 统计合成次数
-                string strURL = "https://www.moem.cc/software/FileInImage/use";
+                string strURL = "https://neko0.com/count/software.php?name=FileInImage&action=use";
                 System.Net.HttpWebRequest request;
                 request = (System.Net.HttpWebRequest)WebRequest.Create(strURL);
                 request.Method = "POST"; // Post请求方式
                 request.ContentType = "application/x-www-form-urlencoded"; // 内容类型
-                System.Net.HttpWebResponse response;
-                // 获得响应流
-                response = (System.Net.HttpWebResponse)request.GetResponse();
-                System.IO.StreamReader myreader = new System.IO.StreamReader(response.GetResponseStream(), Encoding.UTF8);
-                // string responseText = myreader.ReadToEnd();
-                myreader.Close();
-                // MessageBox.Show(responseText);
+                try
+                {
+                    // 获得响应流
+                    System.Net.HttpWebResponse response;
+                    response = (System.Net.HttpWebResponse)request.GetResponse();
+                    System.IO.StreamReader myreader = new System.IO.StreamReader(response.GetResponseStream(), Encoding.UTF8);
+                    // string responseText = myreader.ReadToEnd();
+                    myreader.Close();
+                    // MessageBox.Show(responseText);
+                }
+                catch (Exception){}
 
                 tip.Content = "提示：合成完成文件储存于压缩包源文件同目录";
             }
